@@ -721,6 +721,16 @@ class PlayState extends MusicBeatState
 						bg.active = false;
 						add(bg);
 				}
+			case 'minionhell':
+				{
+						defaultCamZoom = 0.9;
+						curStage = 'stage';
+						var bg:FlxSprite = new FlxSprite(-350, -165).loadGraphic(Paths.image('minionhell/bg'));
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.9, 0.9);
+						bg.active = false;
+						add(bg);
+				}
 			case 'stage':
 				{
 						defaultCamZoom = 0.9;
